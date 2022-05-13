@@ -15,7 +15,7 @@ export class ProductService {
   products$: Observable<Product[]> = this.productsSubject.asObservable();
   productsTotalNumber$: Observable<number>;
   mostExpensiveProduct$: Observable<Product>;
-  productsToLoad: number = 100;
+  productsToLoad: number = 10;
 
   constructor(private http: HttpClient) {
     this.initProducts();
